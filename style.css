@@ -1,0 +1,48 @@
+.qrcode-container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.qrcode-container h2 {
+  font-size: 40px;
+}
+
+.qrcode-container .content {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.qrcode-container .control {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 8px;
+}
+
+.qrcode-container .qrcode-message {
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  padding: 18px;
+  resize: none;
+}
+
+.qrcode-container .generate-btn {
+  border: none;
+  padding: 12px 32px;
+  font-size: 20px;
+  background: #001219;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .qrcode-container .content {
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
